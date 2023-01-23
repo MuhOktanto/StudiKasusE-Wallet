@@ -1,16 +1,17 @@
 package entity;
 
 public class Data {
-    public String nama, nomorTelpon, tanggalLahir, PIN;
+    public String nama, nomorTelpon, tanggalLahir, PIN, riwayatTransaksi;
     public int saldo;
 
     public Data(String nama, String nomorTelpon,
-                String tanggalLahir, String PIN, int saldo){
+                String tanggalLahir, String PIN, int saldo, String riwayatTransaksi){
         this.nama = nama;
         this.nomorTelpon = nomorTelpon;
         this.tanggalLahir = tanggalLahir;
         this.PIN = PIN;
         this.saldo = saldo;
+        this.riwayatTransaksi = riwayatTransaksi;
     }
 
     public void setNama(String nama_pengguna){
@@ -33,6 +34,10 @@ public class Data {
         this.saldo = saldo;
     }
 
+    public void setRiwayatTransaksi(String riwayatTransaksi) {
+        this.riwayatTransaksi = riwayatTransaksi;
+    }
+
     public Data(String nama, String nomorTelpon, String tanggalLahir, String PIN){
     }
 
@@ -50,5 +55,8 @@ public class Data {
     }
     public int getSaldo() {
         return saldo;
+    }
+    public String getRiwayatTransaksi() {
+        return riwayatTransaksi;
     }
 }

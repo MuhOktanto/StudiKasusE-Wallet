@@ -80,11 +80,11 @@ public class MenuUtama implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource()==goSaya){
-            SayaPage saya = new SayaPage();
+            new SayaPage();
             menu.dispose();
         }
         if (e.getSource()==goIsiSaldo){
-            TopupPage topup = new TopupPage();
+            new TopupPage();
             menu.dispose();
         }
         if (e.getSource()==goBeliPulsa){
@@ -92,9 +92,10 @@ public class MenuUtama implements ActionListener{
             menu.dispose();
         }
         if (e.getSource()==goRiwayat){
+            new RiwayatPage();
         }
         if (e.getSource()==goKeluar){
-            RegLogPage reglog = new RegLogPage();
+            new RegLogPage();
             menu.dispose();
         }
     }

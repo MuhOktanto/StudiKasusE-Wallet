@@ -10,5 +10,7 @@ public class BeliPulsa {
 
     public static void bayar(int harga){
         Verifikasi.getDataakun().saldo -= harga;
+        Verifikasi.getDataakun().riwayatTransaksi = "Beli Pulsa                                                      -"
+        +harga;
     }
 }

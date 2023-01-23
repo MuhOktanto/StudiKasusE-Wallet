@@ -90,8 +90,9 @@ public class RegisterPage implements ActionListener{
             String nomorTelpon = fiedNoHp.getText();
             String tanggalLahir = fieldTgl.getText();
             String PIN = fieldPin.getText();
+            String riwayatTransaksi = null;
             int saldo = 0;
-            Data pendaftar = new Data(nama,nomorTelpon,tanggalLahir,PIN, saldo);
+            Data pendaftar = new Data(nama,nomorTelpon,tanggalLahir,PIN, saldo, riwayatTransaksi);
 
             if (Verifikasi.register(pendaftar)){
                 LoginPage login = new LoginPage();
